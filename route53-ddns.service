@@ -1,0 +1,7 @@
+[Unit]
+Description=Route53 DNS update agent
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/opt/scripts/route53-ddns.sh
